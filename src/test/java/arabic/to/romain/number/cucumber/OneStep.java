@@ -8,21 +8,25 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class OnesNumbersSteps {
+import static org.junit.Assert.assertEquals;
 
+public class OneStep {
 
+    RomanNumeralConverter converter = new RomanNumeralConverter();
+    Integer oneArabicNumber;
 	@Given("I have supplied the arabic number (\\d+)$")
-	public void the_menu_contains_the_following_dishes(final Integer quantity) {
-		System.out.println("quantity::"+quantity);
+	public void the_menu_contains_the_following_dishes(final Integer oneArabicNumber) {
+        this.oneArabicNumber=oneArabicNumber;
 	}
 
 	@When("I ask for the roman numerals")
 	public void the_customer_order() {
-		// System.out.println("quantity::"+quantity);
+
 	}
 
 	@Then("the result should be I")
 	public void the_result_should_be_I(){
+        assertEquals("I", converter.convert(oneArabicNumber));
 
 	}
 
