@@ -1,5 +1,6 @@
-package arabic.to.romain.number;
+package arabic.to.romain.number.cucumber;
 
+import arabic.to.romain.number.RomanNumeralConverter;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;

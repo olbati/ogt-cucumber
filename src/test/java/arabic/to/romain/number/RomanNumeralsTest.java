@@ -1,4 +1,4 @@
-/**
+package arabic.to.romain.number; /**
  * The MIT License (MIT)
  *
  * Copyright (c) 2014 Tomasz Kaczmarzyk
@@ -21,10 +21,10 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package net.kaczmarzyk.kata;
 
 import static org.junit.Assert.assertEquals;
 
+import arabic.to.romain.number.RomanNumeralConverter;
 import org.junit.Test;
 
 

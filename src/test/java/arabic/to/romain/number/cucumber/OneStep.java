@@ -1,7 +1,8 @@
-package arabic.to.romain.number;
+package arabic.to.romain.number.cucumber;
 
 import java.util.List;
 
+import arabic.to.romain.number.RomanNumeralConverter;
 import org.junit.Assert;
 
 import cucumber.api.java.en.Given;
