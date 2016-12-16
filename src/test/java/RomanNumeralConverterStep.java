@@ -12,10 +12,10 @@ import static org.junit.Assert.assertEquals;
 public class RomanNumeralConverterStep {
 
     RomanNumeralConverter converter = new RomanNumeralConverter();
-    Integer oneArabicNumber;
+    Integer arabicNumber;
 	@Given("I have supplied the arabic number (\\d+)$")
 	public void the_menu_contains_the_following_dishes(final Integer oneArabicNumber) {
-        this.oneArabicNumber=oneArabicNumber;
+        this.arabicNumber=oneArabicNumber;
 	}
 
 	@When("I ask for the roman numerals")
@@ -25,7 +25,7 @@ public class RomanNumeralConverterStep {
 
 	@Then("the result should be (.*)")
 	public void the_result_should_be(String romainNumber){
-        assertEquals(romainNumber, converter.convert(oneArabicNumber));
+        assertEquals(romainNumber, converter.convert(arabicNumber));
 
 	}
 
