@@ -1,5 +1,6 @@
 import java.util.List;
 
+
 import org.junit.Assert;
 
 import cucumber.api.java.en.Given;
@@ -8,7 +9,7 @@ import cucumber.api.java.en.When;
 
 import static org.junit.Assert.assertEquals;
 
-public class OneStep {
+public class OnesStep {
 
     RomanNumeralConverter converter = new RomanNumeralConverter();
     Integer oneArabicNumber;
