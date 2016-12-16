@@ -10,3 +10,8 @@ Scenario: The number 1
   Given I have supplied the arabic number 2
   When I ask for the roman numerals
   Then the result should be II
+
+   Scenario: Convert  The number 3
+    Given I have supplied the arabic number 3
+    When I ask for the roman numerals
+    Then the result should be III
