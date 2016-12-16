@@ -3,9 +3,11 @@
  */
 public class RomanNumeralConverter {
     public String convert(Integer oneArabicNumber) {
-        if (oneArabicNumber==1){
-            return "I";
-        }
-        return null;
+        StringBuilder result = new StringBuilder();
+         for(int i=1;i<=oneArabicNumber;i++){
+             result.append("I");
+         }
+
+        return result.toString();
     }
 }

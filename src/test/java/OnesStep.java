@@ -23,9 +23,9 @@ public class OnesStep {
 
 	}
 
-	@Then("the result should be I")
-	public void the_result_should_be_I(){
-        assertEquals("I", converter.convert(oneArabicNumber));
+	@Then("the result should be (.*)")
+	public void the_result_should_be(String romainNumber){
+        assertEquals(romainNumber, converter.convert(oneArabicNumber));
 
 	}
 
