@@ -9,7 +9,7 @@ import cucumber.api.java.en.When;
 
 import static org.junit.Assert.assertEquals;
 
-public class OnesStep {
+public class RomanNumeralConverterStep {
 
     RomanNumeralConverter converter = new RomanNumeralConverter();
     Integer oneArabicNumber;

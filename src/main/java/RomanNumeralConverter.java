@@ -11,6 +11,11 @@ import java.util.Map;
 public class RomanNumeralConverter {
    static LinkedHashMap<Integer,String> romanSymbols= new LinkedHashMap<Integer,String>();
     static{
+        romanSymbols.put(1000, "M");
+        romanSymbols.put(900, "CM");
+        romanSymbols.put(500, "D");
+        romanSymbols.put(400, "CD");
+        romanSymbols.put(100, "C");
         romanSymbols.put(90, "XC");
         romanSymbols.put(50, "L");
         romanSymbols.put(40, "XL");
@@ -24,8 +29,10 @@ public class RomanNumeralConverter {
     public String convert(Integer oneArabicNumber) {
         StringBuilder result = new StringBuilder();
         for (Map.Entry<Integer,String>romanSymbol:romanSymbols.entrySet()) {
-        int repeatTimes=oneArabicNumber/romanSymbol.getKey();
-            oneArabicNumber=oneArabicNumber%romanSymbol.getKey();
+            Integer divisor=romanSymbol.getKey();
+        int repeatTimes=oneArabicNumber/divisor;
+            oneArabicNumber=oneArabicNumber%divisor;
+            oneArabicNumber=oneArabicNumber%divisor;
             result.append(Strings.repeat(romanSymbol.getValue(), repeatTimes));
         }
 
