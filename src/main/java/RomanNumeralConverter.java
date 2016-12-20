@@ -32,7 +32,6 @@ public class RomanNumeralConverter {
             Integer divisor=romanSymbol.getKey();
         int repeatTimes=oneArabicNumber/divisor;
             oneArabicNumber=oneArabicNumber%divisor;
-            oneArabicNumber=oneArabicNumber%divisor;
             result.append(Strings.repeat(romanSymbol.getValue(), repeatTimes));
         }
 
